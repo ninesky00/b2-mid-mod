@@ -9,6 +9,14 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
+   <header>
+    <div class="nav-bar">
+        <%= link_to "Back to Home", "/" %>
+        <%= link_to "Studios", studios_path %>
+        <%= link_to 'Movies', studio_movies_path %>
+        <%= link_to 'Actors', actors_path %>
+  </header>
+
   <body>
     <%= yield %>
   </body>
